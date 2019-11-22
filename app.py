@@ -55,9 +55,9 @@ def playGame(board):
                     turn = PLAYER_1
             else:
                 print(
-                    "The position you want to play is 69... Just kidding its already filled")
+                    "The position you want is already filled")
         else:
-            print("Dude seriously... cant you see 1 and 9 in there... oh my go00000d")
+            print("Please type a number between 1 and 9")
 
         printBoard(board)
         winner = winnerChecker(board)
@@ -70,9 +70,9 @@ def playGame(board):
                 else:
                     Flag = False
             if Flag == False:
-                print("It is a Tie... you both are loosers")
+                print("It is a Tie.")
         else:
-            print("we have a winner and it is " + winner)
+            print("We have a winner and it is " + winner)
             Flag = False
     Play_Again()
 
@@ -80,15 +80,15 @@ def playGame(board):
 def Play_Again():
 
     Play_Again = input(
-        "Do you want to play again???, Please dont be a dick and enter y or n: ")
+        "Do you want to play again??? Enter y or n: ")
     if Play_Again == "y":
         New_Board = [' ']*9
         printBoard(New_Board)
         playGame(New_Board)
     elif Play_Again == "n":
-        print("Okay go ahead, leave me here you jerk")
+        print("Okay go ahead, enjoy your day")
     else:
-        print("I told you dont be a dick maaan, OH my gooooood")
+        print("Please enter y or n")
 
 
 The_Board = [' ']*9
